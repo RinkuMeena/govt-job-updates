@@ -2,18 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>RRB NTPC 2025 (UG) – All India Govt Jobs</title>
+  <title>RRB NTPC 2025 (10+2 Inter Level) – Full Details</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       background: #020617;
@@ -28,17 +22,17 @@
       flex-direction: column;
     }
 
-    /* ===== HEADER (same look as index) ===== */
+    /* ---------- Header (same vibe as index) ---------- */
     header {
       position: sticky;
       top: 0;
       z-index: 20;
       background: rgba(15, 23, 42, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+      backdrop-filter: blur(16px);
     }
     .nav {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0.8rem 1.25rem;
       display: flex;
@@ -46,457 +40,418 @@
       justify-content: space-between;
       gap: 1rem;
     }
-    .brand {
-      display: flex;
-      flex-direction: column;
-    }
     .brand-title {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       font-weight: 700;
-      letter-spacing: 0.04em;
       text-transform: uppercase;
+      letter-spacing: 0.06em;
       color: #f97316;
     }
     .brand-subtitle {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: #9ca3af;
     }
-    .nav-links {
+    .nav-actions {
       display: flex;
-      gap: 1.25rem;
-      font-size: 0.9rem;
-      color: #cbd5f5;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
-    .nav-links a {
-      position: relative;
-      padding-bottom: 0.16rem;
+    .chip-nav {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: #020617;
+      cursor: pointer;
     }
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #6366f1, #f97316);
-      transition: width 0.2s ease;
-    }
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-    @media (max-width: 720px) {
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .nav-links {
-        flex-wrap: wrap;
-      }
+    .chip-nav.primary {
+      border-color: rgba(129, 140, 248, 0.9);
+      color: #c7d2fe;
     }
 
-    /* ===== LAYOUT ===== */
+    /* ---------- Layout ---------- */
     main {
       flex: 1;
-      padding: 1.25rem 0 2.25rem;
+      padding: 1.5rem 0 2rem;
     }
-    .wrap {
-      max-width: 1200px;
+    .container {
+      max-width: 1100px;
       margin: 0 auto;
       padding: 0 1.25rem;
     }
 
-    .top-bar {
+    .pill-row {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-      align-items: center;
-    }
-    .back-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.38rem 0.75rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.7);
-      font-size: 0.82rem;
-      color: #e5e7eb;
-      background: rgba(15, 23, 42, 0.95);
+      gap: 0.5rem;
+      margin-bottom: 0.9rem;
     }
     .pill {
+      font-size: 0.72rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(75, 85, 99, 0.9);
+      color: #e5e7eb;
+      white-space: nowrap;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.25), rgba(15, 23, 42, 0.98));
+      border-radius: 1.2rem;
+      padding: 1.25rem 1.2rem 1.4rem;
+      border: 1px solid rgba(55, 65, 81, 0.95);
+      box-shadow: 0 22px 50px rgba(15, 23, 42, 0.9);
+      margin-bottom: 1.25rem;
+    }
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .hero-title {
+      font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .hero-subtitle {
+      font-size: 0.85rem;
+      color: #cbd5f5;
+    }
+    .hero-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      min-width: 210px;
+    }
+
+    .btn, .btn-outline {
       display: inline-flex;
       align-items: center;
-      padding: 0.3rem 0.8rem;
-      border-radius: 999px;
-      background: rgba(30, 64, 175, 0.7);
-      border: 1px solid rgba(129, 140, 248, 0.9);
+      justify-content: center;
       font-size: 0.8rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      cursor: pointer;
+      border: none;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .btn {
+      background: linear-gradient(135deg, #4f46e5, #f97316);
+      color: #f9fafb;
+      font-weight: 500;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #e5e7eb;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      font-size: 0.78rem;
+    }
+    .hero-item-label {
+      color: #9ca3af;
+    }
+    .hero-item-value {
+      font-weight: 500;
+      color: #e5e7eb;
+    }
+
+    /* ---------- Cards grid ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    @media (max-width: 900px) {
+      .hero-top { flex-direction: column; }
+      .hero-btns { flex-direction: row; flex-wrap: wrap; }
+      .grid { grid-template-columns: 1fr; }
     }
 
     .card {
-      border-radius: 1.1rem;
+      background: radial-gradient(circle at top left, rgba(15, 118, 110, 0.24), rgba(15, 23, 42, 0.98));
+      border-radius: 1rem;
       border: 1px solid rgba(55, 65, 81, 0.9);
-      background:
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.21), rgba(15, 23, 42, 0.98));
-      padding: 1.1rem 1rem 1.2rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.95);
+      padding: 1rem 1rem 1.1rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
     }
-    .card h2 {
-      font-size: 1.05rem;
-      margin-bottom: 0.3rem;
+    .card.purple {
+      background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.22), rgba(15, 23, 42, 0.98));
+    }
+    .card.orange {
+      background: radial-gradient(circle at top left, rgba(234, 88, 12, 0.25), rgba(15, 23, 42, 0.98));
+    }
+    .card-header {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
     }
     .card-sub {
-      font-size: 0.9rem;
-      color: #9ca3af;
-      margin-bottom: 0.6rem;
+      font-size: 0.75rem;
+      color: #cbd5f5;
+      margin-bottom: 0.4rem;
+    }
+    .card ul { list-style: none; margin-top: 0.25rem; }
+    .card li {
+      font-size: 0.78rem;
+      margin-bottom: 0.25rem;
+      padding-left: 0.8rem;
+      position: relative;
+    }
+    .card li::before {
+      content: "•";
+      position: absolute;
+      left: 0.15rem;
+      color: #a5b4fc;
     }
 
     .badge-row {
       display: flex;
       flex-wrap: wrap;
       gap: 0.35rem;
-      margin-bottom: 0.75rem;
+      margin-top: 0.4rem;
     }
-    .badge {
-      font-size: 0.72rem;
-      padding: 0.16rem 0.65rem;
+    .badge-soft {
+      font-size: 0.7rem;
+      padding: 0.16rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px dashed rgba(148, 163, 184, 0.7);
+      color: #e5e7eb;
+    }
+
+    .links-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.65rem;
+    }
+    .link-chip {
+      font-size: 0.78rem;
+      padding: 0.35rem 0.8rem;
       border-radius: 999px;
       background: rgba(15, 23, 42, 0.9);
       border: 1px solid rgba(148, 163, 184, 0.7);
-      color: #e5e7eb;
     }
 
-    .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.55rem 1.2rem;
-      margin-bottom: 0.85rem;
-      font-size: 0.86rem;
-    }
-    @media (max-width: 720px) {
-      .meta-grid { grid-template-columns: 1fr; }
-    }
-    .meta-label {
-      font-size: 0.78rem;
-      color: #9ca3af;
-    }
-    .meta-value {
-      font-weight: 500;
-    }
-
-    .btn-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 0.4rem;
-    }
-    .btn {
-      padding: 0.4rem 0.95rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-size: 0.85rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.3rem;
-      cursor: pointer;
-    }
-    .btn-primary {
-      background: linear-gradient(90deg, #6366f1, #f97316);
-      border-color: rgba(129, 140, 248, 0.9);
-      color: #f9fafb;
-    }
-    .btn-outline {
-      background: rgba(15, 23, 42, 0.95);
-      border-color: rgba(148, 163, 184, 0.8);
-      color: #e5e7eb;
-    }
-
-    .card-section-title {
-      font-size: 0.92rem;
-      font-weight: 600;
-      margin-bottom: 0.45rem;
-    }
-
-    .two-col-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.9rem 1.2rem;
-      font-size: 0.86rem;
-    }
-    @media (max-width: 800px) {
-      .two-col-grid { grid-template-columns: 1fr; }
-    }
-
-    ul.list {
-      margin-left: 1rem;
-      margin-top: 0.25rem;
-    }
-    ul.list li {
-      list-style: disc;
-      margin-bottom: 0.18rem;
-    }
-
-    .highlight {
-      color: #4ade80;
-      font-weight: 500;
-    }
-
-    /* footer */
     footer {
-      border-top: 1px solid rgba(55, 65, 81, 0.9);
+      border-top: 1px solid rgba(51, 65, 85, 0.95);
       background: #020617;
       padding: 0.9rem 1.25rem 1.2rem;
       font-size: 0.75rem;
       color: #9ca3af;
     }
     .footer-inner {
-      max-width: 1200px;
+      max-width: 1100px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 0.75rem;
     }
-    .footer-inner a {
-      color: #e5e7eb;
-      text-decoration: underline;
-      text-decoration-style: dotted;
-    }
   </style>
 </head>
+
 <body>
 <div class="page">
-  <!-- ===== HEADER ===== -->
+
+  <!-- Header -->
   <header>
     <div class="nav">
-      <div class="brand">
-        <span class="brand-title">All India Govt Jobs</span>
-        <span class="brand-subtitle">Latest Vacancy • Answer Key • Results</span>
+      <div>
+        <div class="brand-title">All India Govt Jobs</div>
+        <div class="brand-subtitle">RRB NTPC 2025 – 10+2 Inter Level (Under Graduate)</div>
       </div>
-      <nav class="nav-links">
-        <a href="index.html#vacancy">Vacancy</a>
-        <a href="index.html#answer-key">Answer Key</a>
-        <a href="index.html#result">Result</a>
-      </nav>
+      <div class="nav-actions">
+        <a href="index.html" class="chip-nav primary">← Back to Home</a>
+        <a href="https://www.rrbapply.gov.in/" target="_blank" class="chip-nav">Official Apply Portal</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <div class="wrap">
-      <!-- TOP BAR -->
-      <div class="top-bar">
-        <a href="index.html" class="back-btn">← Back to Home</a>
-        <span class="pill">RRB NTPC 2025 (Undergraduate Level)</span>
-      </div>
+    <div class="container">
 
-      <!-- ===== OVERVIEW + SHORT INFO ===== -->
-      <section class="card">
-        <h2>RRB NTPC 2025 (UG) Recruitment – Overview</h2>
-        <p class="card-sub">
-          Non-technical popular category (Undergraduate Level) posts for 12th pass
-          candidates in Indian Railways. Isme ticketing, train clerk, accounts,
-          customer dealing jaise desk-type kaam aate hain. Work culture mainly
-          office / station based hota hai jahan duty shifts aur rotation system follow hota hai.
-        </p>
-
-        <div class="badge-row">
-          <span class="badge">Organiser: Railway Recruitment Board (RRB)</span>
-          <span class="badge">Qualification: 10+2 / 12th Pass</span>
-          <span class="badge">Job Location: All India</span>
-          <span class="badge">Mode: Online CBT</span>
+      <!-- Overview / Hero -->
+      <section class="hero-card">
+        <div class="pill-row">
+          <span class="pill">Organiser: Railway Recruitment Boards (RRBs)</span>
+          <span class="pill">Qualification: 10+2 / Inter</span>
+          <span class="pill">Job Location: All India</span>
+          <span class="pill">Mode: CBT (Online)</span>
         </div>
 
-        <div class="meta-grid">
+        <div class="hero-top">
           <div>
-            <div class="meta-label">Post Date / Update</div>
-            <div class="meta-value">21 November 2025 (Expected)</div>
-          </div>
-          <div>
-            <div class="meta-label">Name of Post</div>
-            <div class="meta-value">RRB NTPC 10+2 Inter Level Recruitment 2025</div>
-          </div>
-          <div>
-            <div class="meta-label">Total Posts (Approx.)</div>
-            <div class="meta-value">~3445 (zone wise exact details notification me)</div>
-          </div>
-          <div>
-            <div class="meta-label">Result / Exam Mode</div>
-            <div class="meta-value">Computer Based Test (CBT-1, CBT-2) + Typing / Skill Test</div>
-          </div>
-        </div>
-
-        <div class="btn-row">
-          <a class="btn btn-primary" href="https://www.rrbapply.gov.in/" target="_blank">
-            Apply / Login – rrbapply.gov.in
-          </a>
-          <a class="btn btn-outline" href="#" target="_blank">
-            Official Notification (PDF) – Coming Soon
-          </a>
-          <a class="btn btn-outline" href="https://indianrailways.gov.in/" target="_blank">
-            Indian Railways Portal
-          </a>
-        </div>
-      </section>
-
-      <!-- ===== IMPORTANT DATES + APPLICATION FEE ===== -->
-      <section class="card">
-        <div class="two-col-grid">
-          <div>
-            <h3 class="card-section-title">Important Dates (Tentative)</h3>
-            <ul class="list">
-              <li>Application Start: <span class="highlight">21 September 2024</span></li>
-              <li>Last Date to Apply Online: <span class="highlight">27 October 2024</span></li>
-              <li>Fee Payment Last Date: 29 October 2024</li>
-              <li>Correction / Modified Form: 30 September – 06 November 2024</li>
-              <li>Exam Date (CBT-1): 07 August 2025 to 08 September 2025</li>
-              <li>Admit Card: Exam se 4 din pehle</li>
-              <li>Answer Key Available: 15 September 2025 (Expected)</li>
-              <li>Result Date: Available Soon / Notification ke hisaab se</li>
-            </ul>
+            <h1 class="hero-title">RRB NTPC 10+2 Inter Level Recruitment 2025</h1>
+            <p class="hero-subtitle">
+              Indian Railways ke Non-Technical Popular Categories (Under Graduate) ke liye
+              all-India recruitment. Isme Ticket Clerk, Accounts Clerk, Train Clerk,
+              Commercial-cum-Ticket Clerk jaise posts aati hain. Kaam mostly office / station
+              based hota hai jahan rotational shifts aur customer dealing rehti hai.
+            </p>
           </div>
 
-          <div>
-            <h3 class="card-section-title">Application Fee</h3>
-            <ul class="list">
-              <li>General / OBC / EWS: ₹500/-</li>
-              <li>SC / ST / PH / Female: ₹250/-</li>
-              <li>Fee refund (Stage-I exam dekar): partial refund as per official rules</li>
-              <li>Payment Mode: Debit Card / Credit Card / Net Banking / UPI / E-Challan</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== PAY SCALE & WORK CULTURE ===== -->
-      <section class="card">
-        <h3 class="card-section-title">Pay Scale & Working Culture</h3>
-        <p class="card-sub">
-          NTPC undergraduate posts 7th CPC ke <span class="highlight">Pay Level-2 &amp; Level-3</span>
-          me aate hain. Example posts: Junior Clerk-cum-Typist, Accounts Clerk, Train Clerk,
-          Commercial-cum-Ticket Clerk, etc.
-        </p>
-
-        <div class="two-col-grid">
-          <div>
-            <strong>Basic Pay – Level-2 (approx.)</strong>
-            <ul class="list">
-              <li>Basic Pay: लगभग ₹19,900/- per month</li>
-              <li>DA + HRA + TA + अन्य allowances extra</li>
-              <li>Approx In-hand (city ke hisaab se): ₹30,000+ per month</li>
-            </ul>
-          </div>
-          <div>
-            <strong>Basic Pay – Level-3 (approx.)</strong>
-            <ul class="list">
-              <li>Basic Pay: लगभग ₹21,700/- per month</li>
-              <li>DA, HRA, Night Duty Allowance, आदि included</li>
-              <li>Approx In-hand: ₹35,000+ per month (zone / posting par depend)</li>
-            </ul>
-          </div>
-        </div>
-
-        <p style="font-size:0.8rem;color:#9ca3af;margin-top:0.6rem;">
-          Exact post-wise pay matrix aur allowances ke liye official notification jarur dekhein.
-        </p>
-      </section>
-
-      <!-- ===== AGE LIMIT & ELIGIBILITY ===== -->
-      <section class="card">
-        <div class="two-col-grid">
-          <div>
-            <h3 class="card-section-title">Age Limit (as on 01-01-2025)</h3>
-            <ul class="list">
-              <li>Minimum Age: <span class="highlight">18 Years</span></li>
-              <li>Maximum Age: <span class="highlight">33 Years</span></li>
-              <li>Upper age relaxation as per Railway rules (SC / ST / OBC / PwD / ESM).</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="card-section-title">Eligibility (12th Pass)</h3>
-            <ul class="list">
-              <li>10+2 / Intermediate exam from any recognised Board in India.</li>
-              <li>General / OBC / EWS: minimum 50% marks (post wise conditions dekhें).</li>
-              <li>Typing requirement for Clerk / Typist posts:
-                <ul class="list">
-                  <li>English Typing: 30 WPM</li>
-                  <li>Hindi Typing: 25 WPM</li>
-                </ul>
-              </li>
-              <li>Medical standard &amp; physical requirement RRB rules ke अनुसार.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== SELECTION PROCESS + HOW TO APPLY ===== -->
-      <section class="card">
-        <div class="two-col-grid">
-          <div>
-            <h3 class="card-section-title">Selection Process</h3>
-            <ul class="list">
-              <li>CBT-1 (Common Computer Based Test)</li>
-              <li>CBT-2 (Post wise)</li>
-              <li>Typing Test / Skill Test (agar post me required ho)</li>
-              <li>Document Verification &amp; Medical Examination</li>
-              <li>Final merit list CBT marks + qualifying tests ke basis par.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="card-section-title">How to Apply Online</h3>
-            <ul class="list">
-              <li>Step-1: Nearest RRB ka official website / apply portal open karein:
-                <span class="highlight">rrbapply.gov.in</span></li>
-              <li>Step-2: “RRB NTPC 2025 UG Recruitment” notification pe click karein.</li>
-              <li>Step-3: Registration karein → basic details, mobile number, email fill karein.</li>
-              <li>Step-4: Qualification, post preference, category details carefully fill karein.</li>
-              <li>Step-5: Photo, signature &amp; documents upload karein (notification ke format me).</li>
-              <li>Step-6: Application fee online pay karein aur final submit karein.</li>
-              <li>Step-7: Final submitted form ka print / PDF save kar lena future use ke liye.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===== IMPORTANT LINKS ===== -->
-      <section class="card">
-        <h3 class="card-section-title">Important Links</h3>
-        <ul class="list">
-          <li>
-            Apply / Login (Official Portal) –
-            <a class="highlight" href="https://www.rrbapply.gov.in/" target="_blank">
-              rrbapply.gov.in
+          <div class="hero-btns">
+            <a class="btn" href="https://www.rrbapply.gov.in/" target="_blank">
+              Apply / Login – rrbapply.gov.in
             </a>
-          </li>
-          <li>
-            Official Notification PDF – <span class="highlight">Available Soon</span>
-          </li>
-          <li>
-            Official Railway Website –
-            <a class="highlight" href="https://indianrailways.gov.in/" target="_blank">
-              indianrailways.gov.in
+            <!-- 👇 Ye button direct notification PDF kholega -->
+            <a class="btn-outline" href="CEN_07_2025_UNDER_GRADUATE_POSTS.pdf" target="_blank">
+              View Full Notification (UG – CEN 07/2025)
             </a>
-          </li>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <div class="hero-item-label">Notification No.</div>
+            <div class="hero-item-value">CEN 07/2025 – NTPC (Under Graduate)</div>
+          </div>
+          <div>
+            <div class="hero-item-label">Total Vacancies (UG)</div>
+            <div class="hero-item-value">3445 approx. (zone-wise) 0</div>
+          </div>
+          <div>
+            <div class="hero-item-label">Notification Date</div>
+            <div class="hero-item-value">04 Oct 2025 (Employment News) 1</div>
+          </div>
+          <div>
+            <div class="hero-item-label">Category</div>
+            <div class="hero-item-value">Central Govt • Railway • Non-Technical</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Important Info cards -->
+      <section class="grid" style="margin-bottom:1.2rem;">
+        <!-- Important Dates -->
+        <article class="card purple">
+          <h2 class="card-header">Important Dates (UG Posts)</h2>
+          <p class="card-sub">Ye dates official CEN 07/2025 notification se li gayi hain.</p>
+          <ul>
+            <li><strong>Opening of Online Application:</strong> 28 Oct 2025</li>
+            <li><strong>Last Date to Apply Online:</strong> 28 Nov 2025 (23:59 hrs)</li>
+            <li><strong>Last Date for Fee Payment:</strong> 29 Nov 2025</li>
+            <li><strong>Correction Window (Form Edit):</strong> 30 Nov – 09 Dec 2025</li>
+            <li><strong>Scribe Details Submit:</strong> 10 Dec – 14 Dec 2025</li>
+          </ul>
+          <div class="badge-row">
+            <span class="badge-soft">Exam Date: As per RRB schedule</span>
+          </div>
+        </article>
+
+        <!-- Application Fee -->
+        <article class="card orange">
+          <h2 class="card-header">Application Fee</h2>
+          <p class="card-sub">Fee pay karne ke baad CBT me appear hone par refund milta hai. </p>
+          <ul>
+            <li><strong>₹500</strong> – All candidates (except fee concession categories).  
+              CBT me appear hone par <strong>₹400 refund</strong>.</li>
+            <li><strong>₹250</strong> – SC / ST / PwBD / Female / Transgender / EBC / EWS / Minorities.  
+              CBT me appear hone par <strong>₹250 full refund</strong>.</li>
+            <li>Payment mode: Debit Card / Credit Card / Net Banking / UPI etc.</li>
+          </ul>
+          <div class="badge-row">
+            <span class="badge-soft">Service charges extra ho sakte hain</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid" style="margin-bottom:1.2rem;">
+        <!-- Age Limit -->
+        <article class="card">
+          <h2 class="card-header">Age Limit (as on 01-01-2026)</h2>
+          <p class="card-sub">Official notification ke according. 3</p>
+          <ul>
+            <li><strong>Minimum Age:</strong> 18 Years</li>
+            <li><strong>Maximum Age:</strong> 30 Years (UR)</li>
+          </ul>
+          <p class="card-sub" style="margin-top:0.4rem;">Upper age me relaxation:</p>
+          <ul>
+            <li>OBC (NCL): +3 years</li>
+            <li>SC / ST: +5 years</li>
+            <li>PwBD: +10 years (category wise alag-alag)</li>
+            <li>Ex-servicemen / departmental employees ke liye alag relaxation – notification dekho.</li>
+          </ul>
+        </article>
+
+        <!-- Eligibility -->
+        <article class="card">
+          <h2 class="card-header">Eligibility & Qualification</h2>
+          <p class="card-sub">Post-wise detailed parameters Annexure me diye gaye hain. 4</p>
+          <ul>
+            <li><strong>Educational Qualification:</strong> 10+2 / Intermediate Exam from a recognised Board.</li>
+            <li>Candidates ko closing date tak required qualification pass hona chahiye.</li>
+            <li>Typist posts ke liye English / Hindi typing speed (30 / 25 WPM) required hogi.</li>
+            <li>Medical fitness standards (A-2, B-2, C-2 etc.) post ke hisaab se apply honge.</li>
+          </ul>
+          <div class="badge-row">
+            <span class="badge-soft">Indian citizen / specified nationality rules applicable</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Selection Process -->
+      <section class="card purple" style="margin-bottom:1.2rem;">
+        <h2 class="card-header">Selection Process</h2>
+        <p class="card-sub">RRB NTPC UG posts ke liye multiple stages ka process hota hai. </p>
+        <ul>
+          <li><strong>1st Stage CBT:</strong> All notified posts ke liye common objective test.</li>
+          <li><strong>2nd Stage CBT:</strong> Post wise alag paper (UG posts ke liye level-wise).</li>
+          <li><strong>Computer Based Typing Skill Test</strong> – Typist / Clerk cum Typist posts ke liye.</li>
+          <li><strong>Document Verification &amp; Medical Examination</strong> – Final selection se pehle.</li>
         </ul>
+        <div class="badge-row">
+          <span class="badge-soft">Normalization of marks CBT me apply hoga</span>
+          <span class="badge-soft">Final merit: 2nd Stage CBT + qualifying tests</span>
+        </div>
       </section>
+
+      <!-- How to apply / Important Links -->
+      <section class="card orange">
+        <h2 class="card-header">How to Apply &amp; Important Links</h2>
+        <p class="card-sub">Form sirf official RRB NTPC portal se hi bharna hai.</p>
+
+        <ol style="font-size:0.8rem; margin-left:0.9rem; margin-bottom:0.5rem;">
+          <li>Sabse pehle notification CEN 07/2025 ko achhe se padho.</li>
+          <li>RRB NTPC portal par One-Time Registration (OTR) complete karo.</li>
+          <li>RRB / zone choose karke online application form fill karo.</li>
+          <li>Documents details, category, qualification, preference sab sahi-sahi bharna.</li>
+          <li>Application fee online pay karke final submit karo, print / PDF save kar lo.</li>
+        </ol>
+
+        <div class="links-row">
+          <a class="link-chip" href="https://www.rrbapply.gov.in/" target="_blank">Apply / Login – rrbapply.gov.in</a>
+          <a class="link-chip" href="https://indianrailways.gov.in/" target="_blank">Indian Railways Official Portal</a>
+          <!-- Graduate notification bhi user ko yahin se mil sakta hai -->
+          <a class="link-chip" href="CEN_06_2025_GRADUATE_POSTS.pdf" target="_blank">
+            Graduate Posts Notification (CEN 06/2025)
+          </a>
+        </div>
+      </section>
+
     </div>
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="footer-inner">
       <div>
-        <strong>Disclaimer:</strong>
-        Yeh page sirf information purpose ke liye hai. Hum koi government website nahi hain.
-        Final details hamesha official notification / website se verify karein.
+        <strong>Disclaimer:</strong> Ye ek informational website hai. Hum sirf official Railway
+        notifications se data lete hain. Form bharne se pehle hamesha original notification
+        aur official website ko verify karein.
       </div>
       <div>
-        Contact / Feedback:
-        <a href="mailto:youremail@example.com">youremail@example.com</a>
+        Contact / Feedback: <a href="mailto:youremail@example.com">youremail@example.com</a>
       </div>
     </div>
   </footer>
