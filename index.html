@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
+    /* ========== RESET ========== */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -20,7 +21,10 @@
       color: #e5e7eb;
       line-height: 1.6;
     }
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
     ul { list-style: none; }
 
     .page {
@@ -29,7 +33,7 @@
       flex-direction: column;
     }
 
-    /* HEADER */
+    /* ========== HEADER / NAVBAR ========== */
     header {
       position: sticky;
       top: 0;
@@ -85,6 +89,7 @@
     .nav-links a:hover::after {
       width: 100%;
     }
+
     @media (max-width: 720px) {
       .nav {
         flex-direction: column;
@@ -95,7 +100,7 @@
       }
     }
 
-    /* HERO */
+    /* ========== HERO ========== */
     .hero {
       max-width: 1200px;
       margin: 1.5rem auto 0;
@@ -135,7 +140,7 @@
       font-weight: 500;
     }
 
-    /* GRID */
+    /* ========== GRID (3 COLUMNS) ========== */
     main {
       flex: 1;
       padding: 1.5rem 0 2rem;
@@ -151,7 +156,9 @@
       gap: 1.25rem;
     }
     @media (max-width: 1024px) {
-      .three-col-grid { grid-template-columns: 1fr; }
+      .three-col-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .column {
@@ -207,6 +214,7 @@
       color: #9ca3af;
     }
 
+    /* JOB CARDS */
     .job-list {
       display: flex;
       flex-direction: column;
@@ -224,7 +232,8 @@
     }
     .job-item:hover {
       border-color: rgba(129, 140, 248, 0.9);
-      background: radial-gradient(circle at top left, rgba(129, 140, 248, 0.18), rgba(15, 23, 42, 0.98));
+      background:
+        radial-gradient(circle at top left, rgba(129, 140, 248, 0.18), rgba(15, 23, 42, 0.98));
     }
     .job-title {
       font-weight: 500;
@@ -282,11 +291,12 @@
 
 <body>
 <div class="page">
+  <!-- ========== HEADER ========== -->
   <header>
     <div class="nav">
       <div class="brand">
-        <span class="brand-title">All India Govt Jobs</span>
-        <span class="brand-subtitle">Latest Govt Jobs (सरकारी नौकरी) • Answer Key • Results</span>
+        <span class="brand-title">ALL INDIA GOVT JOBS</span>
+        <span class="brand-subtitle">Latest Govt Jobs • Answer Key • Results</span>
       </div>
       <nav class="nav-links">
         <a href="#vacancy">Vacancy</a>
@@ -297,11 +307,12 @@
     </div>
   </header>
 
+  <!-- ========== HERO ========== -->
   <section class="hero">
     <h1 class="hero-title">Today’s Government Job Updates</h1>
     <p class="hero-subtitle">
-      One place for Central &amp; State Government Jobs – Railway, SSC, UPSC, Bank, Defence, Teaching and PSU.
-      Choose a category below and open the detailed page for complete information.
+      One place for Central &amp; State Government Jobs – Railway, SSC, UPSC, Bank, Defence,
+      Teaching and PSU. Choose a category below and open the detailed page for complete information.
     </p>
 
     <div class="hero-badges">
@@ -317,18 +328,271 @@
     </p>
   </section>
 
-  <!-- MAIN GRID – SAME AS BEFORE (your vacancy, answer key, result columns) -->
-  <!-- I’m not repeating it to save space – you can keep exactly the code you already have
-       for the three columns, just under this comment. -->
-  <!-- ... paste your existing three-column HTML here ... -->
+  <!-- ========== MAIN CONTENT (3 COLUMNS) ========== -->
+  <main>
+    <div class="grid-wrapper">
+      <div class="three-col-grid">
 
+        <!-- ===== COLUMN 1 – LATEST VACANCIES ===== -->
+        <section class="column" id="vacancy">
+          <div class="column-header">
+            <h2 class="column-title">Latest Vacancies</h2>
+            <span class="column-pill">New Applications</span>
+          </div>
+
+          <!-- Railway Jobs -->
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">Railway Jobs</h3>
+              <span class="category-tag">RRB • Metro • Other</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">RRB NTPC 2025 – Undergraduate Level</div>
+                <div class="job-meta">
+                  <span>Railway Recruitment Board</span>
+                  <span>12th Pass</span>
+                  <span>All India</span>
+                  <span>Last Date: 30 Apr 2025</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="rrb-ntpc-ug-2025.html">View Details</a>
+                  <a class="job-link secondary" href="https://www.rrbapply.gov.in/" target="_blank">
+                    Apply Online (Official)
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SSC Jobs -->
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">SSC Jobs</h3>
+              <span class="category-tag">CGL • CHSL • MTS • GD</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">SSC CGL 2025 – Graduate Level</div>
+                <div class="job-meta">
+                  <span>Staff Selection Commission</span>
+                  <span>Any Graduate</span>
+                  <span>All India</span>
+                  <span>Last Date: 15 May 2025</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="ssc-cgl-2025.html">View Details</a>
+                  <a class="job-link secondary" href="https://ssc.gov.in" target="_blank">
+                    Apply Online (Official)
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- UPSC -->
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">UPSC &amp; Civil Services</h3>
+              <span class="category-tag">IAS • CDS • NDA etc.</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">UPSC Civil Services Examination 2025</div>
+                <div class="job-meta">
+                  <span>Union Public Service Commission</span>
+                  <span>Graduate</span>
+                  <span>All India</span>
+                  <span>As per UPSC Calendar</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="upsc-civil-services-2025.html">View Details</a>
+                  <a class="job-link secondary" href="https://upsconline.nic.in" target="_blank">
+                    Apply Online (Official)
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bank Jobs -->
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">Bank Jobs</h3>
+              <span class="category-tag">IBPS • SBI • RBI</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">SBI PO 2025</div>
+                <div class="job-meta">
+                  <span>State Bank of India</span>
+                  <span>Graduates</span>
+                  <span>All India</span>
+                  <span>Last Date: 21 Aug 2025</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="sbi-po-2025.html">View Details</a>
+                  <a class="job-link secondary" href="https://sbi.co.in/careers" target="_blank">
+                    Apply Online (Official)
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- State / Other -->
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">State Govt / Other</h3>
+              <span class="category-tag">Police • Group C • Other</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">UP Police Constable 2025</div>
+                <div class="job-meta">
+                  <span>UPPRPB</span>
+                  <span>10th / 12th Pass</span>
+                  <span>Uttar Pradesh</span>
+                  <span>Last Date: 10 Feb 2025</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="up-police-constable-2025.html">View Details</a>
+                  <a class="job-link secondary" href="https://uppbpb.gov.in/" target="_blank">
+                    Apply Online (Official)
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===== COLUMN 2 – ANSWER KEYS ===== -->
+        <section class="column" id="answer-key">
+          <div class="column-header">
+            <h2 class="column-title">Answer Keys</h2>
+            <span class="column-pill">Official &amp; Provisional</span>
+          </div>
+
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">SSC</h3>
+              <span class="category-tag">Tier-1 / Tier-2</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">SSC CGL 2025 Tier-1 Answer Key</div>
+                <div class="job-meta">
+                  <span>Exam Date: Aug 2025</span>
+                  <span>Objection Last Date: Coming Soon</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="#" target="_blank">Download Answer Key</a>
+                  <a class="job-link secondary" href="#" target="_blank">Raise Objection</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">UPSC</h3>
+              <span class="category-tag">Prelims</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">UPSC CSE 2025 GS Paper Answer Key (Unofficial)</div>
+                <div class="job-meta">
+                  <span>Held as per UPSC calendar</span>
+                  <span>Set wise PDF</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link secondary" href="#" target="_blank">Download PDF</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ===== COLUMN 3 – EXAM RESULTS ===== -->
+        <section class="column" id="result">
+          <div class="column-header">
+            <h2 class="column-title">Exam Results</h2>
+            <span class="column-pill">Final &amp; Provisional</span>
+          </div>
+
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">SSC Results</h3>
+              <span class="category-tag">CGL • CHSL • GD etc.</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">SSC GD Constable 2024 Final Result</div>
+                <div class="job-meta">
+                  <span>Staff Selection Commission</span>
+                  <span>Result Date: 15 Jan 2025</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="#" target="_blank">Download Result PDF</a>
+                  <a class="job-link secondary" href="#" target="_blank">Cut-off Marks</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">Railway Results</h3>
+              <span class="category-tag">RRB • RRC</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">RRB Group-D 2024 Panel Result</div>
+                <div class="job-meta">
+                  <span>Indian Railways</span>
+                  <span>Result Date: 08 Dec 2024</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="#" target="_blank">View Result</a>
+                  <a class="job-link secondary" href="#" target="_blank">Document Verification List</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="category">
+            <div class="category-header">
+              <h3 class="category-title">Bank / PSU</h3>
+              <span class="category-tag">PO • Clerk • PSU</span>
+            </div>
+            <ul class="job-list">
+              <li class="job-item">
+                <div class="job-title">IBPS PO 2024 Final Result</div>
+                <div class="job-meta">
+                  <span>IBPS</span>
+                  <span>Result Date: 25 Mar 2025</span>
+                </div>
+                <div class="job-links">
+                  <a class="job-link" href="#" target="_blank">Download Result</a>
+                  <a class="job-link secondary" href="#" target="_blank">Score Card</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
   <footer id="footer">
     <div class="footer-inner">
       <div>
         <strong>Disclaimer:</strong>
-        This is not an official government website. All information is collected from
-        official notifications and government portals. Candidates must always verify
-        details from the original notification before applying.
+        This is not an official government website. All information is collected from official
+        notifications and government portals. Candidates must always verify details from the
+        original notification before applying.
       </div>
       <div>
         Contact / Feedback:
@@ -338,6 +602,7 @@
   </footer>
 </div>
 
+<!-- JS: auto-set Last Updated -->
 <script>
   const el = document.getElementById("lastUpdatedText");
   if (el) {
